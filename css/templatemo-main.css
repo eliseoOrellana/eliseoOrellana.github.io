@@ -1861,26 +1861,36 @@ padding-left: 16px;}
 
 @media(max-width: 450px) {
 	nav ul {
-		margin-top: 30px;
+		margin-top: 80px;
 	}
 
 	nav ul li {
-		margin: 10px 0px;
+		margin: 10px 5px;
 	}
 
 	nav a {
 		padding: 15px 2 0px;
 	}
 	
+	.footer .content p {
+        font-size: 9px; /* Reducir el tamaño del texto aún más para pantallas pequeñas */
+        margin-bottom: 4px; /* Ajustar el espacio inferior */
+    }
 
+	.buttons a {
+		font-size: 11px; 
+	}
 }
 @media (max-width: 320px) {
     nav ul {
         margin-top: 5px; /* Reducir aún más el espacio en la parte superior */
     }
 
+	nav box{
+        padding: 5px;
+    }
     nav ul li {
-        margin: 3px 0; /* Reducir aún más el espacio entre elementos de la lista */
+        margin: 5px 0; /* Reducir aún más el espacio entre elementos de la lista */
     }
 
     nav a {
