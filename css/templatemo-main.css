@@ -1886,5 +1886,23 @@ padding-left: 16px;}
     nav a {
         padding: 8px 4px; /* Reducir aún más el relleno de los enlaces */
     }
-	
+
+	.footer .content {
+        left: 0;
+        width: 100%;
+        max-width: 100%;
+        position: relative; /* Cambiar a posición relativa para apilar los elementos */
+        bottom: unset;
+        right: unset;
+        display: block;
+        text-align: center; /* Centrar el contenido en pantallas más pequeñas */
+    }
+
+    .footer .content p {
+        font-size: 12px; /* Hacer el texto más pequeño */
+        margin-bottom: 10px; /* Reducir el espacio inferior */
+    }
+
+
+
 }
