@@ -1877,9 +1877,9 @@ padding-left: 16px;}
         display: none;
     }
 
-	.buttons a {
+	/* .buttons a {
 		font-size: 11px; 
-	}
+	} */
 }
 @media (max-width: 320px) {
     nav ul {
