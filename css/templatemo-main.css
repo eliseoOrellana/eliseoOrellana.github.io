@@ -1331,7 +1331,7 @@ padding-left: 16px;}
 	left: 30%;
 	width: 70%;
 	max-width: 70%;
-	position: fixed;
+	position: absolute;
 	bottom: 0;
 	right: 0;
 	display: inline-block;
