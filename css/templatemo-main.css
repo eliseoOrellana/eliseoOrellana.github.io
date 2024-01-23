@@ -817,7 +817,8 @@ nav a:hover::before {
 
 .slides {
 	width: 600vw;
-	height: 100vh;
+	/* height: 100vh; */
+	height: calc(100vh - 100px); /* Restar la altura del footer, ajusta según sea necesario */
 	-webkit-transition: -webkit-transform 0.8s ease;
 	transition: -webkit-transform 0.8s ease;
 	transition: transform 0.8s ease;
