@@ -1902,11 +1902,12 @@ padding-left: 16px;}
         left: 0;
         width: 100%;
         max-width: 100%;
-        position: fixed; /* Cambiar a posición relativa para apilar los elementos */
+        position: relative; /* Cambiar a posición relativa para apilar los elementos */
         bottom: unset;
         right: unset;
         display: block;
         text-align: center; /* Centrar el contenido en pantallas más pequeñas */
+		z-index: 1; /
     }
 
     .footer .content p {
