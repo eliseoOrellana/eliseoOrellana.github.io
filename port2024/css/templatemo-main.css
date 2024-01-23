@@ -738,9 +738,10 @@ nav .logo img {
 }
 
 nav ul {
-	margin-top: 60px;
+	margin-top: 70px;
 	text-align: left;
 	margin-left: 40px;
+	margin-right: 7%;
 	list-style-type: none;
 	height: 48vh;
 	display: -webkit-box;
@@ -755,32 +756,39 @@ nav ul {
 }
 
 nav ul li {
-	margin: 25px 0px;
+	margin: 1% ;
+	
 }
 
 nav a,
 nav a:visited,
 nav a:active {
 	color: #fff;
+	
 }
 
 nav a {
 	text-decoration: none !important;
-	font-size: 14px;
+	font-size: 15px;
 	letter-spacing: 0.5px;
 	-webkit-transition: color 2s, background 1s;
 	transition: color 2s, background 1s;
 	padding: 20px 30px;
 	position: relative;
 	z-index: 0;
+	display: flex;
+    align-items: center;
+	
 }
 
 nav a.active {
 	background-color: #fff;
 	color: #232323;
+	
 }
 
 nav a::before {
+	
 	content: "";
 	position: absolute;
 	height: 0%;
@@ -798,6 +806,7 @@ nav a:hover {
 }
 
 nav a:hover::before {
+	
 	-webkit-animation: fill 0.7s forwards ease-in-out;
 	animation: fill 0.7s forwards ease-in-out;
 	opacity: 1;
@@ -846,11 +855,11 @@ nav a:hover::before {
 }
 
 .slides .slide:nth-child(1) {
-	background-image: url(../img/first_bg.jpg);
+	background-image: url(../img/constructive_bg_01.jpg);
 }
 
 .slides .slide:nth-child(2) {
-	background-image: url(../img/second_bg.jpg);
+	background-image: url(../img/sebastian-marx-D2otAuiSGX4-unsplash.jpg);
 }
 
 .slides .slide:nth-child(3) {
@@ -878,6 +887,7 @@ nav a:hover::before {
 .main-btn a:hover {
 	background-color: #fff;
 	color: #232323 !important;
+	
 }
 
 
@@ -951,7 +961,6 @@ nav a:hover::before {
 
 	
 	display: inline-block;
-	
 	background-color: #fff;
 	border: 2px solid #fff;
 	padding: 8px 15px;
@@ -1006,6 +1015,8 @@ nav a:hover::before {
 	/* O ajusta el porcentaje o el valor en píxeles según tus necesidades */
 	max-width: none;
 	/* Permite que la imagen tenga un ancho mayor que el contenedor */
+	filter: brightness(1.2) contrast(1.1);
+	
 }
 
 .second-content h2 {
@@ -1093,7 +1104,7 @@ nav a:hover::before {
 	margin-top: 0px;
 }
 
-.third-content p {
+.third-content p{
 	font-size: 13px;
 	color: #fff;
 	letter-spacing: 0.5px;
@@ -1101,6 +1112,48 @@ nav a:hover::before {
 	line-height: 24px;
 	margin-bottom: 20px;
 }
+/* agregado para el texto tercera seccion  */
+.professional-list {font-size: 13px;
+	color: #fff;
+	letter-spacing: 0.5px;
+	font-weight: 300;
+	line-height: 24px;
+	margin-bottom: 20px;
+padding-left: 15px;}
+
+.no-link-style{
+	color: inherit; /* Toma el color del texto del elemento padre */
+    text-decoration: none; /* Elimina la subrayado por defecto de los enlaces */
+    cursor: pointer; /* Cambia el cursor a una mano para indicar que es un enlace clickeable */
+	font-style: italic; /* Agrega estilo en cursiva */
+    font-weight: bold; /* Hace el texto en negrita */
+    font-size: 1.1em; /* Ajusta el tamaño del texto */
+}
+.no-link-style:hover {
+    text-decoration: underline; /* Agrega subrayado al pasar el ratón sobre el enlace */
+}
+.professional-list strong{font-size: 14px;
+	}
+
+
+/* 
+---- */
+#backendimg {
+	margin-top: 50px;
+}
+#frontimg{
+	margin-top: 20px;
+}
+
+
+
+
+
+
+
+.professional-list li{font-size: 13px;
+	
+padding-left: 16px;}
 
 .third-content .main-btn a {
 	display: inline-block;
@@ -1419,7 +1472,7 @@ nav a:hover::before {
 
 		nav ul {
 			text-align: center;
-			margin-left: 0px;
+			margin-left: 5px;
 		}
 
 
@@ -1487,7 +1540,7 @@ nav a:hover::before {
 		.fourth-content .item .hover-effect p {
 			display: none; /* Ocultar el párrafo en pantallas pequeñas */
 		}
-
+		
 
 
 	}
@@ -1506,6 +1559,7 @@ nav a:hover::before {
 		}
 		
 		
+		
 	
 	
 
@@ -1514,3 +1568,293 @@ nav a:hover::before {
 	/*detalles*/
 
 	
+
+
+
+	.buttons {
+		min-width: 70px;
+		display: flex;
+		justify-content: center;
+		padding-bottom: 10px;
+		
+		
+		
+	  }
+	  
+	  .buttons a {
+		text-decoration: none;
+		font-size: 20px;
+		width: 30px;
+		height: 30px;
+		line-height:30px;
+		text-align: center;
+		background: #222425;
+		color: #f1f1f1;
+		border-radius: 50%;
+		box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+		transition: all .4s ease-in-out;
+	  }
+	  
+	  .buttons a:hover {
+		transform: scale(1.2);
+		
+	  }
+
+	  .footer .buttons a {
+		margin-right: 10px; /* Puedes ajustar este valor según tus preferencias */
+	}
+
+	.footer .content p {
+		margin-bottom: 10px; /* Puedes ajustar este valor según tus preferencias */
+	}
+
+/* mode light  */
+
+	nav.dark-mode {
+		 background: rgba(10, 82, 216, 0.5); /*(173, 216, 230, 0.5   | 72, 177, 212, 0.5  */
+		color: #ffffff;
+	  }
+	  
+	  nav.dark-mode a,
+	  nav.dark-mode a:visited,
+	  nav.dark-mode a:active {
+		color: #000000;
+	  }
+	  
+	  nav.dark-mode a.active {
+		background-color: #fcfcfc;
+		color: #141313;
+	  }
+	  
+	  nav.dark-mode a::before {
+		background-color: #361f1f; /* Cambia el color del borde antes del enlace */
+	  }
+	  /* Agrega estilos específicos para el modo claro */
+
+
+	  /* Agrega estilos específicos para el modo claro en la sección de slides */
+.slides.dark-mode {
+	/* Cambia el fondo de la sección en modo claro */
+	background: rgba(255, 255, 255, 0.5);
+	.professional-list li{
+		color: #000000;
+	  }
+
+	.col-md-12 input,textarea{
+	background-color: #000000 transparent;
+	
+	}
+
+	.main-btn a:hover {
+		background-color: #000000;
+		color: #ffffff !important;
+		
+	}
+
+	.first-content h2 {
+		
+		border-bottom: 2px solid #000000;
+	}
+
+	.second-content h2 {
+		border-bottom: 2px solid #000000;
+	}
+	
+    .third-content h2 {
+		
+		border-bottom: 2px solid #000000;
+		
+	}
+
+	.fourth-content .item .hover-effect p {
+		color: white;
+	}
+
+	
+
+}
+  
+  /* Cambia el fondo del contenido en modo claro */
+  .slides.dark-mode .content {
+	background: rgba(10, 82, 216, 0.5);
+  }
+  
+  /* Cambia el color del texto en modo claro */
+  .slides.dark-mode h2,
+  .slides.dark-mode p,
+  .slides.dark-mode em {
+	color: #000000;
+  }
+  
+  /* Cambia el color del scrollbar en modo claro */
+  .slides.dark-mode .content::-webkit-scrollbar-thumb {
+	background: rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Cambia el color de fondo del botón principal en modo claro */
+  .slides.dark-mode .main-btn a {
+	background-color: #fff;
+	color: #232323 !important;
+  }
+  
+  /* Cambia el color de fondo y texto del botón fb-btn en modo claro */
+  .slides.dark-mode .fb-btn a {
+	background-color: #fff;
+	border: 2px solid #fff;
+	color: #232323;
+  }
+  
+  /* Cambia el color del texto del botón fb-btn en modo claro al hacer hover */
+  .slides.dark-mode .fb-btn a:hover {
+	color: #000000 ; 
+	background-color: transparent;
+  }
+  
+
+    
+  /* boton modos */
+  
+
+
+
+@media only screen and (max-width: 600px) {
+    .container .box{
+        width: 100%;
+    }
+}
+/* main class name */
+.gm-btn{
+    background: none;
+    border: none;
+    padding: 5px 15px;
+    font-size: 16px;
+    line-height: 24px;
+    width: 300;
+    transition: 0.3s;
+    cursor: pointer;
+    position: relative;
+    outline: none;
+}
+.gb-cutter::before,
+.gb-shutter::before,
+.gb-shutter::after,
+.gb-bordered::before,
+.gb-split::before
+{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    transition: 0.5s;
+}
+/* cutter */
+
+.gb-cutter{
+    border: 2px solid var(--gb-51);
+    border-radius: 5px;
+    box-shadow: 3px 3px 0 var(--gb-51);
+    font-size: 1.125rem;
+    font-weight: 700;
+    overflow: hidden;
+    color: var(--gb-51);
+}
+.gb-cutter::before{
+    top: 100%;
+    left: 0;
+    width: 150%;
+    aspect-ratio: 1;
+    background: var(--gb-51);
+    transform: translate(50%,0%) rotateZ(-45deg);
+}
+.gb-cutter:hover::before{
+    transform: translate(-20%,-60%) rotateZ(-45deg);
+}
+.gb-cutter:hover{
+    box-shadow: 0 0 0;
+    color: #eee;
+}
+
+/* shutter */
+.gb-shutter{
+    border: 2px solid var(--gb-51);
+    border-radius: 5px;
+    box-shadow: 3px 3px 0 var(--gb-51);
+    font-size: 1.125rem;
+    font-weight: 700;
+    overflow: hidden;
+    color: var(--gb-51);
+}
+.gb-shutter::after, .gb-shutter::before{
+    top: 0;
+    left: 0;
+    width: 130%;
+    aspect-ratio: 1;
+    background: var(--gb-51);
+}
+.gb-shutter::after{
+    transform: translate(-100%,-80%) rotate(30deg);
+}
+.gb-shutter::before{
+    transform: translate(100%,30%) rotate(30deg);
+}
+.gb-shutter:hover::after{
+    transform: translate(-50%,-50%) rotate(30deg);
+}
+.gb-shutter:hover::before{
+    transform: translate(30%,-10%) rotate(30deg);
+}
+.gb-shutter:hover{
+    color: #eee;
+    box-shadow: 0 0 0;
+}
+
+/* bordered */
+.gb-bordered{
+    background: var(--gb-52);
+    color: #eee;
+    border-radius: 5px;
+}
+.gb-bordered::before{
+    width: calc(100% - 5px);
+    height: calc(100% - 5px);
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    border: 2px solid var(--gb-52);
+    border-radius: 8px;
+}
+.gb-bordered:hover::before{
+    width: calc(100% + 4px);
+    height: calc(100% + 5px);
+}
+.gb-bordered:hover{
+    background: linear-gradient(to left, var(--gb-52),var(--gb-52d));
+}
+
+/* gb-split */
+.gb-split{
+    border: 1px solid #6a5acd;
+    color: #6a5acd;
+    border-radius: 5px;
+    font-size: 1.125rem;
+}
+.gb-split::before{
+    width: 100%;
+    height: 0;
+    background: #6a5acd;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.gb-split:hover::before{
+    height: 100%;
+}
+.gb-split:hover{
+    color: #eee;
+}
+/* Root */
+
+:root{
+    --gb-51: #111827;
+    --gb-52: #2196f3;
+    --gb-52d: #0e71c1;
+}

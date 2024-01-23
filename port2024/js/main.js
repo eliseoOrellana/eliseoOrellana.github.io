@@ -102,3 +102,23 @@ $(document).ready(function () {
         $('#videoModalLabel').text(''); // Limpiar el título al cerrar el modal
     });
 });
+
+// Descargar CV
+$('#downloadCV').on('click', function () {
+    window.open('img/CVEliseo.Orellana2024.pdf', '_blank');
+    $body.bind('false', mouseEvent);
+});
+
+
+//form contact
+
+function toggleDarkMode() {
+     // Cambiar el modo en el nav
+    var navElement = document.querySelector('nav');
+    navElement.classList.toggle('dark-mode');
+
+
+    // Cambiar el modo en la sección de slides (ejemplo)
+    var slides = document.querySelector('.slides');
+    slides.classList.toggle('dark-mode');
+  }

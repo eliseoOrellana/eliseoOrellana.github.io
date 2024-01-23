@@ -24,6 +24,7 @@
 
     <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
 
+
 </head>
 </head>
 
@@ -47,9 +48,13 @@
 
     </div>
 
-
+    
     <nav>
-
+        
+        <div class="box">
+            <button onclick="toggleDarkMode()" id="modoBtn" class="gm-btn gb-shutter">Mode</button>
+        </div>
+        
         <!-- <div class="logo">
             <img src="img/logo.png" alt="">
         </div>
@@ -57,14 +62,18 @@
             <img src="img/mini_logo.png" alt="">
         </div> -->
         <ul>
-            <li><a href="#1"><i class="fa fa-home"></i> <em>Home</em></a></li>
-            <li><a href="#2"><i class="fa fa-user"></i> <em>About</em></a></li>
-            <li><a href="#3"><i class="fa fa-pencil"></i> <em>Entries</em></a></li>
+            <li><a href="#1"><i class="fa fa-home"></i> <em>Home </em></a></li>
+            <li><a href="#2"><i class="fa fa-user"></i> <em>About </em></a></li>
+            <li><a href="#3"><i class="fa fa-pencil"></i> <em>Dev</em></a></li>
             <li><a href="#4"><i class="fa fa-image"></i> <em>Work</em></a></li>
             <li><a href="#5"><i class="fa fa-envelope"></i> <em>Contact</em></a></li>
+            <li><a id="downloadCV" href="#"><i class="fa fa-download"></i> <em>CV</em></a></li>
+           
         </ul>
+        
     </nav>
-
+    
+    
     <div class="slides">
         <div class="slide" id="1">
             <div class="content first-content">
@@ -95,11 +104,12 @@
                     <div class="col-md-6">
                         <div class="left-content">
                             <h2>About ME</h2>
-                            <div class="code-container ">
-                                <img id="CodeCap" src="img/aptitudes.png" alt="">
+                            <div class="code-container">
+                                <img id="CodeCap" src="img/aboutme.png" alt="">
                             </div>
                             <div class="main-btn"><a href="#3">Read More</a></div>
                         </div>
+
                     </div>
                     <div class="col-md-6 ">
                         <div id="astro" class="right-image">
@@ -194,17 +204,61 @@
                                     <div class="row">
                                         <div class="col-md-6">
                                             <div class="left-content">
-                                                <h2>Quisque commodo quam</h2>
-                                                <p>Vestibulum augue ex, finibus sit amet nisi id, maximus ultrices
-                                                    ipsum. Maecenas rhoncus nibh in mauris lobortis, a maximus diam
-                                                    faucibus. In et eros urna. Suspendisse potenti. Pellentesque
-                                                    commodo, neque nec molestie tempus, purus ante feugiat augue.</p>
+
+                                                <h2>Desarrollo Backend</h2>
+                                                
+                                                <ul class="professional-list">
+                                                    <li>
+                                                        <strong>Lenguajes de Programación:</strong>
+                                                        <ul>
+                                                            <li>Experiencia en Node.js y TypeScript, Python,Java para el
+                                                                desarrollo backend. </li>
+                                                            <li>Desarrollo de APIs RESTful para proporcionar servicios
+                                                                escalables y eficientes.</li>
+                                                        </ul>
+                                                    </li>
+
+                                                    <li>
+                                                        <strong>Prácticas de Desarrollo:</strong>
+                                                        <ul>
+                                                            <li>Adherencia a principios SOLID y diseño orientado a
+                                                                objetos.</li>
+                                                            <li>Implementación de patrones de diseño para garantizar un
+                                                                código modular y mantenible.</li>
+                                                        </ul>
+                                                    </li>
+
+                                                    <li>
+                                                        <strong>Herramientas de Desarrollo:</strong>
+                                                        <ul>
+                                                            <li>Utilización de <a class="no-link-style" href="https://www.docker.com/" target="_blank">Docker</a> para la contenerización de
+                                                                aplicaciones, facilitando la portabilidad y la
+                                                                consistencia en diferentes entornos.</li>
+                                                            <li>Integración de sistemas de gestión de bases de datos
+                                                                relaciconales y no relacionales</li>
+                                                            <li>Manejo de máquinas virtuales para el despliegue y
+                                                                mantenimiento de APIs.</li>
+                                                        </ul>
+                                                    </li>
+
+                                                    <li>
+                                                        <strong>Versionamiento y Control de Código:</strong>
+                                                        <ul>
+                                                            <li>Implementación de control de versiones con <a class="no-link-style" href="https://git-scm.com/" target="_blank">GIT</a>,
+                                                                asegurando la colaboración y el seguimiento del
+                                                                historial de cambios.</li>
+                                                            <li>Uso de ramas y pull requests para facilitar la revisión
+                                                                de código siguiendo <a class="no-link-style" href="https://www.conventionalcommits.org/" target="_blank">Conventional Commits</a>.</li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+
                                                 <div class="main-btn"><a href="#4">Continue Reading</a></div>
                                             </div>
                                         </div>
                                         <div class="col-md-6">
                                             <div class="right-image">
-                                                <img src="img/first_service.jpg" alt="first service">
+                                                <img src="img/backend.png" alt="backend" id="backendimg">
                                             </div>
                                         </div>
                                     </div>
@@ -215,16 +269,30 @@
                                     <div class="row">
                                         <div class="col-md-6">
                                             <div class="left-image">
-                                                <img src="img/second_service.jpg" alt="second service">
+                                                <img src="img/frontend.png" alt="frontend" id="frontimg">
                                             </div>
                                         </div>
                                         <div class="col-md-6">
                                             <div class="right-content">
-                                                <h2>Maecenas eu purus eu sapien</h2>
-                                                <p>Sed vitae felis in lorem mollis mollis eget in leo. Donec commodo, ex
-                                                    nec rutrum venenatis, nisi nisl malesuada magna, sed semper ipsum
-                                                    enim a ipsum. Aenean in ante vel mi molestie bibendum. Quisque sit
-                                                    amet lacus in diam pretium faucibus. Cras vel justo lorem.</p>
+                                                <h2>Desarrollo Frontend</h2>
+                                                <ul class="professional-list">
+                                                    
+                                                    <strong> <li>Tecnologías Frontend:</strong>
+                                                        <ul>
+                                                            <li>Desarrollo de interfaces de usuario interactivas utilizando HTML, JavaScript (ES6+), y frameworks como Angular, Django,React</li>
+                                                        </ul>
+                                                    </li>
+                                                    <strong> <li>Consumo de APIs:</strong>
+                                                        <ul>
+                                                            <li>Integración exitosa de APIs RESTful desde el backend para proporcionar datos dinámicos a las interfaces de usuario.</li>
+                                                        </ul>
+                                                    </li>
+                                                    <strong><li>Prácticas de Desarrollo Frontend: </strong>
+                                                        <ul>
+                                                            <li>Uso de buenas prácticas de desarrollo web, incluido el diseño responsivo y la optimización del rendimiento.</li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
                                                 <div class="main-btn"><a href="#4">Continue Reading</a></div>
                                             </div>
                                         </div>
@@ -320,7 +388,7 @@
                                         </div>
                                     </a>
                                     <div class="image">
-                                        <img src="img/gameimg.png">
+                                        <img src="img/marslink.png">
                                     </div>
                                 </div>
                             </div>
@@ -398,8 +466,8 @@
                                 referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
                     </div>
-                    <div class="col-md-6">
-                        <form id="contact" action="" method="post">
+                    <div class="col-md-6" >
+                        <form id="contact" action="https://formsubmit.co/eliseopatricio@gmail.com" method="post">
                             <div class="row">
                                 <div class="col-md-12">
                                     <fieldset>
@@ -460,8 +528,21 @@
     <div class="footer">
         <div class="content">
             <p>Copyright &copy; 2023 Eliseo Orellana </a></p>
+            <section class="buttons">
+                <a href="https://github.com/eliseoOrellana" class="fa fa-github" target="_blank"></a>
+                <a href="https://www.linkedin.com/in/eliseo-orellana-sandoval/" class="fa fa-linkedin" target="_blank"></a>
+                <a href="mailto:eliseopatricio@gmail.com" class="fa fa-google" target="_blank"></a>
+                
+               
+              </section>
+        
         </div>
     </div>
+    
+
+    
+        
+
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
