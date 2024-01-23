@@ -1899,22 +1899,8 @@ padding-left: 16px;}
     }
 
 	.footer .content {
-        left: 0;
-        width: 100%;
-        max-width: 100%;
-        position: relative; /* Cambiar a posición relativa para apilar los elementos */
-        bottom: unset;
-        right: unset;
-        display: block;
-        text-align: center; /* Centrar el contenido en pantallas más pequeñas */
-		z-index: 1; /
+        display: none;
     }
-
-    .footer .content p {
-        font-size: 12px; /* Hacer el texto más pequeño */
-        margin-bottom: 10px; /* Reducir el espacio inferior */
-    }
-
 
 
 }
