@@ -1873,9 +1873,8 @@ padding-left: 16px;}
 		padding: 15px 2 0px;
 	}
 	
-	.footer .content p {
-        font-size: 9px; /* Reducir el tamaño del texto aún más para pantallas pequeñas */
-        margin-bottom: 4px; /* Ajustar el espacio inferior */
+	.footer .content {
+        display: none;
     }
 
 	.buttons a {
