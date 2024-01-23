@@ -691,6 +691,7 @@ html {
 body {
 	overflow: hidden;
 	font-size: 100%;
+	overflow-y: scroll; 
 }
 
 /*nav*/
@@ -847,7 +848,8 @@ nav a:hover::before {
 .content::-webkit-scrollbar {
 	width: 5px;
 	height: 8px;
-	background-color: rgba(0, 0, 0, 0.5);
+	background-color: rgba(10, 82, 216, 0.5) transparent;
+	display: none; 
 }
 
 /* Add a thumb */
@@ -858,6 +860,7 @@ nav a:hover::before {
 .slides .slide:nth-child(1) {
 	background-image: url(../img/constructive_bg_01.jpg);
 }
+
 
 .slides .slide:nth-child(2) {
 	background-image: url(../img/sebastian-marx-D2otAuiSGX4-unsplash.jpg);
