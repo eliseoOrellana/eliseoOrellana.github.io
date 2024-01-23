@@ -1902,7 +1902,7 @@ padding-left: 16px;}
         left: 0;
         width: 100%;
         max-width: 100%;
-        position: relative; /* Cambiar a posición relativa para apilar los elementos */
+        position: fixed; /* Cambiar a posición relativa para apilar los elementos */
         bottom: unset;
         right: unset;
         display: block;
