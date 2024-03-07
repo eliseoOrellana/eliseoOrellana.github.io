@@ -123,29 +123,6 @@ $('#downloadCV').on('click', function () {
 //     slides.classList.toggle('dark-mode');
 //   }
 
-  function toggleDarkMode() {
-    var navElement = document.querySelector('nav');
-    navElement.classList.toggle('dark-mode');
-
-
-    // Cambiar el modo en la sección de slides (ejemplo)
-    var slides = document.querySelector('.slides');
-    slides.classList.toggle('dark-mode');
-    var icono = document.getElementById('modoIcono');
-    var btn = document.getElementById('modoBtn');
-
-    if (icono.classList.contains('fa-moon-o')) {
-        icono.classList.remove('fa-moon-o');
-        icono.classList.add('fa-sun-o');
-        
-        btn.classList.remove('modo-oscuro');
-    } else {
-        icono.classList.remove('fa-sun-o');
-        icono.classList.add('fa-moon-o');
-        icono.style.color = 'white'; 
-        btn.classList.add('modo-oscuro');
-    }
-}
 
 function toggleDarkMode() {
     var navElement = document.querySelector('nav');
