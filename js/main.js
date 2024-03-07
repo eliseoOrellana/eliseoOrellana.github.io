@@ -112,8 +112,18 @@ $('#downloadCV').on('click', function () {
 
 //form contact
 
-function toggleDarkMode() {
-     // Cambiar el modo en el nav
+// function toggleDarkMode() {
+//      // Cambiar el modo en el nav
+//     var navElement = document.querySelector('nav');
+//     navElement.classList.toggle('dark-mode');
+
+
+//     // Cambiar el modo en la sección de slides (ejemplo)
+//     var slides = document.querySelector('.slides');
+//     slides.classList.toggle('dark-mode');
+//   }
+
+  function toggleDarkMode() {
     var navElement = document.querySelector('nav');
     navElement.classList.toggle('dark-mode');
 
@@ -121,4 +131,44 @@ function toggleDarkMode() {
     // Cambiar el modo en la sección de slides (ejemplo)
     var slides = document.querySelector('.slides');
     slides.classList.toggle('dark-mode');
-  }
+    var icono = document.getElementById('modoIcono');
+    var btn = document.getElementById('modoBtn');
+
+    if (icono.classList.contains('fa-moon-o')) {
+        icono.classList.remove('fa-moon-o');
+        icono.classList.add('fa-sun-o');
+        
+        btn.classList.remove('modo-oscuro');
+    } else {
+        icono.classList.remove('fa-sun-o');
+        icono.classList.add('fa-moon-o');
+        icono.style.color = 'white'; 
+        btn.classList.add('modo-oscuro');
+    }
+}
+
+function toggleDarkMode() {
+    var navElement = document.querySelector('nav');
+    navElement.classList.toggle('dark-mode');
+
+
+    // Cambiar el modo en la sección de slides (ejemplo)
+    var slides = document.querySelector('.slides');
+    slides.classList.toggle('dark-mode');
+    var icono = document.getElementById('modoIcono');
+    var btn = document.getElementById('modoBtn');
+
+
+    var img = document.getElementById('modoImg');
+    var btn = document.getElementById('modoBtn');
+
+    if (img.src.includes('luna')) {
+        img.src = 'img/sol.png'; /* Ruta de la imagen del sol */
+        img.alt = 'Modo Claro';
+        btn.classList.remove('modo-oscuro');
+    } else {
+        img.src = 'img/luna.png'; /* Ruta de la imagen de la luna */
+        img.alt = 'Modo Oscuro';
+        btn.classList.add('modo-oscuro');
+    }
+}
