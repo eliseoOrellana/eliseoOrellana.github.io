@@ -105,7 +105,7 @@ $(document).ready(function () {
 
 // Descargar CV
 $('#downloadCV').on('click', function () {
-    window.open('img/CVEliseo.Orellana2024.pdf', '_blank');
+    window.open('img/CV Eliseo.Orellana09.2024.pdf', '_blank');
     $body.bind('false', mouseEvent);
 });
 
